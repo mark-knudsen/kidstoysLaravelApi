@@ -30,4 +30,5 @@ Route::post('products/update/{id}', [ProductsController::class, 'update']);
 Route::get('categories', [CategoriesController::class, 'index']);
 Route::post('categories', [CategoriesController::class, 'store']);
 Route::delete('categories/{id}', [CategoriesController::class, 'delete']);
-Route::post('categories/complete', [CategoriesController::class, 'complete']);
+//Route::post('categories/complete', [CategoriesController::class, 'complete']); // do not work
+Route::post('categories/update/{id}', [ProductsController::class, 'update']);

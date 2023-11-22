@@ -24,7 +24,8 @@ Route::get('products', [ProductsController::class, 'index']);
 Route::get('products/{id}', [ProductsController::class, 'getById']);
 Route::post('products', [ProductsController::class, 'store']);
 Route::delete('products/{id}', [ProductsController::class, 'delete']);
-Route::post('products/complete', [ProductsController::class, 'complete']);
+//Route::post('products/complete/{id}', [ProductsController::class, 'complete']); // do not work
+Route::post('products/update/{id}', [ProductsController::class, 'update']);
 
 Route::get('categories', [CategoriesController::class, 'index']);
 Route::post('categories', [CategoriesController::class, 'store']);
